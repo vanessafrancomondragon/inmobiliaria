@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+.dark-mode {
+    background-color: darken(v.$grisOscuro, 12);
+   
+    p {
+        color: v.$blanco;
+    }
+
+    td {
+        color: darken(v.$blanco, 15%);
+    }
+
+    a,h1,h2,h3,h4 {
+        color: v.$gris;
+    }
+
+    .info-contacto{
+        color: lighten(v.$gris, 20%);  
+        font-size: 2.5rem;
+    }
+    
+    .anuncio,
+    .resumen-propiedad {
+        background-color: v.$grisOscuro;
+        border: 1px solid v.$grisOscuro;
+
+        .precio {
+            color: v.$verde;
+        }
+        .icono {
+            filter: invert(100%); 
+         }
+    }
+
+    .texto-nosotros blockquote {
+        color: v.$blanco;
+    }
+    
+    .formulario {
+        label,
+        legend,
+        p {
+          color: v.$gris; 
+        }
+        input:not([type="submit"]),
+        textarea,
+        select {
+            background-color: v.$gris;
+        }    
+    }
+}

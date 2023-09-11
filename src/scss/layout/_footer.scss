@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+.footer {
+    padding: 1.5em 0;
+    margin-bottom: 0;
+    background-color: darken(v.$grisOscuro, 3%);
+    text-align: center;
+    margin-top: auto;
+
+    .contenido-footer {
+        padding-top: calc(v.$separacion / 2);
+    }
+
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+
+    .copyright {
+        color: v.$blanco;
+        text-align: center;
+    }
+}
